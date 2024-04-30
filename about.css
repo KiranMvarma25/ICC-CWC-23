@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+} 
+
+
+
+body{
+    background-color: rgb(34, 28, 102);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+
+/* ---------------- NAVIGATION BAR ------------------------------ */
+
+.navcontainer{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(246, 61%, 47%, 0.158);
+    border: 2px solid black;
+}
+
+.navitem {
+    color: white;
+    padding: 25px; 
+    margin: 20px;
+    font-style: oblique;
+    font-weight:800;
+    font-size: large;
+    margin: 2px;
+    
+}
+
+
+.navitem:hover{
+    transform: scale(1.07);
+    background-color: hsl(0, 0%, 10%);
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/*--------------- About Me ----------------------------*/
+
+.container{
+    display: flex;
+    justify-content: center;
+} 
+
+
+h2{
+    text-align: center;
+    margin-bottom: 35px;
+    border: 3px solid black;
+    padding: 20px;
+    background-color:rgba(27, 27, 222, 0.455);
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 35px;
+    width: 175px;
+    box-shadow:  5px 5px 5px aliceblue;
+    border-radius: 20px;
+    transition-duration: 1s;
+}
+
+h2:hover{
+    transform: scale(1.02);
+    box-shadow: 10px 10px 3px aliceblue;
+}
+
+
+
+
+
+
+/*   ------------------------- Paragraph -------------------- */
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.paracontainer{
+    border: 0.1px solid rgb(32, 26, 26);;
+    padding: 10px;
+    margin-right:20px;
+    background-color:rgb(53, 53, 137);
+    color: white;
+    border-radius: 25px;
+    width: 700px;
+    box-shadow: 10px 10px 6px aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+
+.item{
+    padding: 15px;
+    font-family:cursive;
+    transition-duration: 1s;
+}
+
+
+.paracontainer:hover{
+    transform: scale(1.01);
+}
+
+.item:hover{
+    transform: scaleX(1.03);
+    background-color: rgb(90, 94, 169);
+    border-radius: 20px;
+}
+
+
+
+/* -------------- COPYRIGHT -------------------- */
+
+#copyright{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+
+
+/* --------- For Different Screen Sizes --------------- */
+
+
+@media (max-width:700px){
+    
+    .paracontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+} 

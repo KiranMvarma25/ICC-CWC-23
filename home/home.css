@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(34, 28, 102);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+
+/* ---------------- NAVIGATION BAR ------------------------------ */
+
+.navcontainer{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(246, 61%, 47%, 0.158);
+    border: 2px solid black;
+}
+
+.navitem {
+    color: white;
+    padding: 25px; 
+    margin: 20px;
+    font-style: oblique;
+    font-weight:800;
+    font-size: large;
+    margin: 2px;
+    
+}
+
+
+.navitem:hover{
+    transform: scale(1.07);
+    background-color: hsl(0, 0%, 10%);
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+                /* DROPDOWN MENU */
+
+
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: hsl(0, 0%, 25%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-style: oblique;
+    font-weight:800;
+    font-size: large;
+    margin: 2px;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(236, 53%, 40%);
+    min-width: 100px;
+    font-style: oblique;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 100%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 10%);
+}
+.dropdown a:hover{
+    background-color: hsl(244, 44%, 49%);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+
+
+/* ------------------------ HEADING ------------------------- */
+
+
+.h2{
+    background-color: rgba(27, 27, 222, 0.455);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+
+/* ------------------ YOUTUBE ------------------------ */
+
+.body{
+    background-color: rgba(224, 225, 238, 0.937);
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.youtube{
+    border: 5px solid black;
+    padding: 25px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(26, 133, 226, 0.699);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    box-shadow: 5px 5px 3px black;
+}
+
+.youtubeitem{
+    display: block;
+}
+
+a{
+    text-decoration: none;   
+    color: aliceblue;
+    font-style: oblique;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+
+/* ------------- CAPTAINS ----------------------- */
+
+/* .captains{
+    display: flex;
+    justify-content: center; 
+    border: 5px solid black;
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 3px white;
+} */
+
+
+
+/* ---------------- ALL IMAGES --------------------- */
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    margin: 35px;
+    border: 7px solid black;
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px white;
+}
+
+
+
+/* -------------- COPYRIGHT -------------------- */
+
+#copyright{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+
+/* ----------------- FOR DIFFERENT SCREENS ----------- */
+
+@media(max-width:800px){
+
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .youtube{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        display: flow-root;
+    }
+
+    iframe{
+        width: 300px;
+    }
+
+    .captains{
+        display: flex;
+        justify-content: center;
+        display: flow-root;
+        padding: 3px;
+        margin: 20px; 
+    }
+
+}

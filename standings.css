@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}  
+
+body{
+    background-color: rgb(34, 28, 102);
+} 
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+
+
+/*-------------------- HEADING -----------------------*/
+
+.h2{
+    /* background-color: rgb(27, 27, 102); */
+    background-color: rgba(27, 27, 222, 0.455);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+img{
+    margin-left:250px;
+}
+
+
+
+/* -------------- COPYRIGHT -------------------- */
+
+#copyright{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+
+
+
+@media(max-width:600px){
+    img{
+        display: block;
+        width: 380px;
+        height: 250px;
+        margin-left: 10px;
+        box-shadow: 3px 3px 3px aliceblue
+    }
+}

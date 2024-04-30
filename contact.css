@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+} 
+
+
+
+body{
+    background-color: rgb(34, 28, 102);
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+/* ---------------- NAVIGATION BAR ------------------------------ */
+
+.navcontainer{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(246, 61%, 47%, 0.158);
+    border: 2px solid black;
+}
+
+.navitem {
+    color: white;
+    padding: 25px; 
+    margin: 20px;
+    font-style: oblique;
+    font-weight:800;
+    font-size: large;
+    margin: 2px;
+    
+}
+
+
+.navitem:hover{
+    transform: scale(1.07);
+    background-color: hsl(0, 0%, 10%);
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/*--------------- CONTACT ----------------------------*/
+
+.headingcontainer{
+    display: flex;
+    justify-content: center;
+} 
+
+
+h2{
+    text-align: center;
+    margin-bottom: 35px;
+    border: 3px solid black;
+    padding: 20px;
+    background-color:rgba(27, 27, 222, 0.455);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    width: 225px;
+    box-shadow:  5px 5px 5px aliceblue;
+    border-radius: 20px;
+    transition-duration: 1s;
+    display: flow-root;
+}
+
+h2:hover{
+    transform: scale(1.02);
+    box-shadow: 10px 10px 3px aliceblue;
+}
+
+
+/* ------------------- CONTAINER ----------------------------------------------- */
+
+/* --------------- FORM ------------------------------- */
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.form{
+    border: 3px solid rgb(128, 35, 35);
+    padding: 20px;
+    margin: 10px;
+    background-color:rgb(215, 226, 236);
+    border-radius: 25px;
+    box-shadow: 5px 5px 3px rgb(136, 136, 213);
+    width: 450px;
+    margin-left: 25px;
+    display: flow-root;
+}
+
+.label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cornflowerblue;
+    font-size: 25px;
+}
+
+.input{
+    background-color:rgb(210, 216, 221) ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.button{
+    padding: 7px;
+    font-family:cursive;
+    background-color: rgb(43, 36, 36);
+    color: azure;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* ---------------------- LINKS -------------------------------------------- */
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    background-color: rgb(108, 108, 203); 
+    padding: 10px;
+    color: white;
+    font-family: cursive;
+    /* width: auto; */
+    border-radius: 25px;
+    box-shadow: 5px 5px 3px black;
+    margin-left: 25px;
+    text-align: center;
+}
+
+h3:hover{
+    transform: scale(1.01);
+    transition-duration: 2s;
+}
+
+
+
+.links{
+    border: 2px solid black;
+    padding: 25px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 3px rgb(136, 136, 213);
+    border-radius: 25px;
+    height: 200px;
+}
+
+.colorlinks{
+    color: blue;
+    margin-left: 25px;
+}
+
+
+
+
+
+
+/* -------------- COPYRIGHT -------------------- */
+
+#copyright{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+
+
+
+
+/* ------------------- MOBILE VIEWS ------------ */
+
+
+@media(max-width:900px){
+    
+    .headingcontainer{
+        justify-content: center;
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .links{
+        margin: auto;
+        margin-top: 50px;
+        width: 250px;
+        height: 250px;
+        display: flow-root;
+    }
+
+    .form{
+        width: 350px;
+        margin: auto;
+        display: flow-root;
+    }
+
+    .input{
+        display: flow-root;
+        font-size: 17px;
+    }
+
+}
+
+
