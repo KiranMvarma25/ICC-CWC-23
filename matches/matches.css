@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(34, 28, 102);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+
+/*-------------------- HEADING -----------------------*/
+
+.h2{
+    background-color: rgba(27, 27, 222, 0.455);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+img{
+    margin: auto;
+    margin: 50px;
+    height: 400px;
+}
+
+
+img:hover{
+    transform: scale(1.07);
+    transition-duration: 1s;
+    box-shadow: 5px 5px 2px skyblue;
+}
+
+
+
+/* -------------- COPYRIGHT -------------------- */
+
+#copyright{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+
+
+/* ------------------- MOBILE VIEWS ------------ */
+
+@media (max-width:600px){
+
+    .knock{
+        background-color: rgb(34, 28, 102);
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+
+    #img{
+        margin: auto;
+    }
+
+
+
+}  

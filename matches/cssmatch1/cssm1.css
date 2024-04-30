@@ -1,0 +1,19 @@
+img{ 
+    margin-left: 25px;
+}
+
+/* .video{
+    display: flex;
+    justify-content: center; 
+} */
+
+@media(max-width:600px){
+
+    video{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+}

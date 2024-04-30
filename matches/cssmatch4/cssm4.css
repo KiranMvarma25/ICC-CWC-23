@@ -1,0 +1,21 @@
+img{ 
+    margin-left: 25px;
+}
+
+
+@media(max-width:600px){
+
+    img{
+        width: 250px;
+        height: 250px;
+        margin-left: 15px;
+    }
+
+    video{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+}

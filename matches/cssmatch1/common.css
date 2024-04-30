@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}  
+
+body{
+    background-color: rgb(34, 28, 102);
+} 
+
+
+
+
+/*-------------------- HEADING -----------------------*/
+
+.h2{
+    /* background-color: rgb(27, 27, 102); */
+    background-color: rgba(27, 27, 222, 0.455);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.h3{
+    /* background-color: rgb(27, 27, 102); */
+    background-color: rgba(27, 27, 222, 0.455);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+
+.details{
+    background-color: aliceblue;
+    padding: 25px;
+    border: 5px solid black;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-weight:600;
+}
+
+
+
+
+.venue{
+    color: aliceblue;
+    font-size: larger;
+    margin-left: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.scores{
+    background-color: aliceblue;
+    padding: 15px;
+    border: 5px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-weight:600;
+    width: 200px;
+    margin-left: 25px;
+    text-align: center; 
+} 
+
+img{
+    margin-left: 25px;
+}
+
+
+
+/* -------------- COPYRIGHT -------------------- */
+
+#copyright{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+} 
+
+
+
+
+
+
